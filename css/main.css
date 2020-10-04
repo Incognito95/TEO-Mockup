@@ -1,0 +1,322 @@
+/*--------------------------- Color variations ----------------------*/
+/* Medium Layout: 1280px */
+/* Tablet Layout: 768px */
+/* Mobile Layout: 320px */
+/* Wide Mobile Layout: 480px */
+/* =================================== */
+/*  Basic Style 
+/* =================================== */
+
+#bg-nav {
+  background: #f8f9fa;
+  height: 53px;
+}
+
+.smartlocker-brand {
+  text-align: middle;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+aside {
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  background: white;
+  left: -300px;
+  top: 3.3rem;
+  transition: all 0.4s ease;
+}
+
+aside.active {
+  left: 0;
+}
+
+aside a {
+  display: block;
+  padding: 1.2rem;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #818181;
+  border-bottom: 1px solid #414141;
+}
+
+.toggle-wrap {
+  padding: 10px;
+  position: relative;
+  cursor: pointer;
+  float: right;
+  user-select: none;
+}
+
+h2 {
+  padding: 10px 13px;
+}
+
+.toggle-bar,
+.toggle-bar::before,
+.toggle-bar::after,
+.toggle-wrap.active .toggle-bar,
+.toggle-wrap.active .toggle-bar::before,
+.toggle-wrap.active .toggle-bar::after {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.toggle-bar {
+  width: 38px;
+  margin: 10px 0;
+  position: relative;
+  border-top: 6px solid #303030;
+  display: block;
+  margin: -3rem -2px;
+}
+
+.toggle-bar::before,
+.toggle-bar::after {
+  content: "";
+  display: block;
+  background: #303030;
+  height: 6px;
+  width: 38px;
+  position: absolute;
+  top: -16px;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: 13%;
+  -webkit-transform-origin: 13%;
+  transform-origin: 13%;
+}
+
+.toggle-bar::after {
+  top: 4px;
+}
+
+.toggle-wrap.active .toggle-bar {
+  border-top: 6px solid transparent;
+}
+
+.toggle-wrap.active .toggle-bar::before {
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.toggle-wrap.active .toggle-bar::after {
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* ----- assigned area ---- */
+.box-1 {
+  width: 250px;
+  border-radius: 17px;
+  margin-top: 40px;
+}
+
+.box-2 {
+  width: 250px;
+  background: #1C83E5;
+  border-radius: 17px;
+  margin-top: 40px;
+}
+
+.box-1 img,
+.box-2 img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* ----- end assigned area ---- */
+
+
+
+/* ------- login container ----- */
+.login-container {
+  margin-top: 70px;
+}
+
+input {
+  width: 97%;
+  border: 1px black solid;
+  border-radius: 7px;
+  padding: 5px 17px;
+}
+
+
+.login-btn {
+  width: 90%;
+}
+
+.info-trigger {
+  cursor: pointer;
+}
+
+.modal {
+  padding-top: 15em;
+}
+
+.modal-header,
+.modal-footer {
+  border-bottom: none;
+  border-top: none;
+}
+
+.float-left {
+  cursor: pointer;
+}
+
+
+input[type='email'] {
+  background: none;
+  border: none;
+  border-bottom: solid 2px #474544;
+  color: #474544;
+  font-size: 1.000em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0em 0 1.875em 0;
+  padding: 0 0 0.875em 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* ------- end login container ----- */
+
+
+
+/* ------ locker history ----- */
+.locker-history-text {
+  margin-top: 400px;
+}
+
+/* ------ end locker history ----- */
+
+/* ----- profile ---- */
+.profile-container {
+  margin-top: 28px;
+}
+
+.form-control {
+  border: 1px solid black;
+}
+
+.profile-picture,
+.invite-people-img,
+.problem-history-img,
+.logo,
+.qr-code {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.change-password-button {
+  background-color: #1c83e5;
+  color: white;
+}
+
+.input-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.show-password-btn {
+  position: absolute;
+  top: 3px;
+  right: 9px;
+  content: '';
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  background-size: contain;
+  background-image: url('https://cdn3.iconfinder.com/data/icons/show-and-hide-password/100/show_hide_password-08-512.png')
+}
+
+
+/* ------ end profile --- */
+
+
+/* ------ invite people --- */
+h3 {
+  padding: 100px 20px;
+}
+
+.invite-btn {
+  border-radius: 1.25rem;
+  width: 55%;
+}
+
+
+/* ------ end invite people --- */
+
+
+
+/* -------- help ------ */
+.carousel-item {
+  height: 65vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.carousel-indicators li {
+  border-top: 10px solid black;
+}
+
+.skip-button {
+  margin-top: 41px;
+}
+
+/* ---------- end help ----- */
+
+
+
+
+
+
+/* --------- create account ----- */
+#country-codes-dropdown {
+  width: 30%;
+}
+
+.btn-signup {
+  width: 93%;
+  background: #1c83e5;
+}
+
+.confirm-password-input {
+  width: 87%;
+}
+
+.input-name,
+.input-email {
+  width: 93%;
+}
+
+
+/* ---------- change password -------- */
+.input-current-password,
+.input-confirm-password {
+  width: 24rem;
+}
+
+.input-new-password {
+  width: 22rem;
+}
