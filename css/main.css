@@ -53,6 +53,10 @@ aside a {
   color: #818181;
 }
 
+aside a::hover {
+  background: #f8f9fa;
+}
+
 .toggle-wrap {
   padding: 10px;
   position: relative;
