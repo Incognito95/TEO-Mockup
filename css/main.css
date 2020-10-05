@@ -53,7 +53,7 @@ aside a {
   color: #818181;
 }
 
-aside a::hover {
+aside a:hover {
   background: #f8f9fa;
 }
 
